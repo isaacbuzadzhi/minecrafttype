@@ -1,5 +1,5 @@
 [build]
-  command = "mkdir -p publish && unzip -q site.zip -d publish"
+  command = "mkdir -p publish/worlds && unzip -q game.zip -d publish && cp world.zip publish/worlds/charlotte.zip"
   publish = "publish"
 
 [build.environment]

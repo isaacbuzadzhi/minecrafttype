@@ -1,0 +1,10 @@
+Browser client: minecraft-web-client by zardoy, MIT License
+https://github.com/zardoy/minecraft-web-client
+
+World generator: Arnis by Louis Erbkamm, Apache License 2.0
+https://github.com/louis-e/arnis
+
+Map data: OpenStreetMap contributors, Open Database License
+https://www.openstreetmap.org/copyright
+
+Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
