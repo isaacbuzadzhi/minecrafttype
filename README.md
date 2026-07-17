@@ -1,33 +1,24 @@
-# Uptown Charlotte Browser World
+# Simple Village World — Netlify Update
 
-This repository deploys a browser-based Minecraft-style client with a real-world Uptown Charlotte map.
+This package replaces the current browser world with a lightweight Minecraft Java 1.20.4 world.
 
-## Files
+## What is in the world
 
-- `game.zip`: browser game engine
-- `world.zip`: replaceable Charlotte world
-- `netlify.toml`: tells Netlify how to assemble the site
-- `charlotte-preview.png`: preview image, not required by the build
-
-## Update the existing site
-
-1. Open the existing `isaacbuzadzhi/minecrafttype` repository on GitHub.
-2. Choose **Add file**, then **Upload files**.
-3. Drag all files from this package into GitHub.
-4. Choose **Commit changes**.
-5. Wait for Netlify to deploy the new commit. Your existing Netlify project and domain stay connected.
-
-The old `site.zip` can remain in the repository, but Netlify no longer uses it.
-
-## Change the world later
-
-Replace only `world.zip`, keep that exact filename, and commit the change. Netlify will redeploy automatically.
-
-## World details
-
-- Approximately 1.5 km by 1.5 km at 1 block per meter
-- Spawn near Trade Street and Tryon Street
-- Minecraft Java 1.21.4 world format
+- Starts at a generated plains village
 - Creative mode
+- Peaceful difficulty
+- Normal Minecraft terrain and structures
+- A cherry grove exists elsewhere in the same world
 
-Use a current desktop Chrome, Edge, Firefox, or Safari browser for the best chance of loading the map. Mobile devices may run out of memory.
+## Put it on your existing website
+
+1. Unzip this download on your computer.
+2. Open your existing `isaacbuzadzhi/minecrafttype` repository on GitHub.
+3. Click **Add file** and then **Upload files**.
+4. Upload `game.zip`, `world.zip`, `netlify.toml`, and `README.md` from this package.
+5. Click **Commit changes**.
+6. Netlify will redeploy the same project and domain automatically.
+
+The new deployed world uses the filename `simple-village-v2.zip`, which prevents the browser from reusing the old Charlotte world from its cache.
+
+The old `site.zip` and other unused files may remain in the repository; Netlify does not use them with this configuration.
