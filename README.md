@@ -1,24 +1,38 @@
-# Simple Village World — Netlify Update
+# Living Materials
 
-This package replaces the current browser world with a lightweight Minecraft Java 1.20.4 world.
+A standalone, mobile-friendly canvas experience with clay, straw, and timber modes.
 
-## What is in the world
+## Put it on your existing GitHub + Netlify site
 
-- Starts at a generated plains village
-- Creative mode
-- Peaceful difficulty
-- Normal Minecraft terrain and structures
-- A cherry grove exists elsewhere in the same world
+1. Unzip `living-materials-netlify.zip`.
+2. Open your existing website repository on GitHub.
+3. Click **Add file**, then **Upload files**.
+4. Drag the files from inside the unzipped folder onto GitHub. Upload the files themselves, not the outer folder.
+5. Make sure `index.html` is at the repository's top level.
+6. Enter `Add Living Materials` in the commit box.
+7. Click **Commit changes**.
+8. Netlify should deploy the update automatically from the same repository and domain.
 
-## Put it on your existing website
+You do not need to reconnect your domain or create a different Netlify project.
 
-1. Unzip this download on your computer.
-2. Open your existing `isaacbuzadzhi/minecrafttype` repository on GitHub.
-3. Click **Add file** and then **Upload files**.
-4. Upload `game.zip`, `world.zip`, `netlify.toml`, and `README.md` from this package.
-5. Click **Commit changes**.
-6. Netlify will redeploy the same project and domain automatically.
+## Files
 
-The new deployed world uses the filename `simple-village-v2.zip`, which prevents the browser from reusing the old Charlotte world from its cache.
+- `index.html`: page structure
+- `styles.css`: layout and controls
+- `app.js`: material animation and interaction
+- `service-worker.js`: clears stale caches from an older site
+- `netlify.toml`: Netlify settings
 
-The old `site.zip` and other unused files may remain in the repository; Netlify does not use them with this configuration.
+No npm, build command, backend, account, or API is required.
+
+## Controls
+
+- Use the material button at the top to switch modes.
+- Clay: press and drag through the mass.
+- Straw: move or drag to create wind.
+- Timber: grab a piece, move fast, and release to throw it.
+- Use the round arrow at the bottom-right to reset the current material.
+
+## Browser support
+
+Current Chrome, Edge, Safari, and Firefox on desktop and mobile.
